@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Cigar Page Brand Blocker",
+  "name": "Gaydar",
   "version": "1.2",
-  "description": "Hides specific cigar brands and sampler SKUs on CigarPage.com",
+  "description": "Hides specific cigar brands on CigarPage.com and adds additional search functionality.",
   "browser_specific_settings": {
     "gecko": {
       "id": "cigarpage-brand-blocker@local.addon",
