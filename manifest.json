@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Cigar Page Brand Blocker",
+  "version": "1.2",
+  "description": "Hides specific cigar brands and sampler SKUs on CigarPage.com",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cigarpage-brand-blocker@local.addon",
+      "strict_min_version": "109.0"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Manage Blocked Brands & SKUs"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
