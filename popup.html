@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 280px;
+      padding: 12px;
+      margin: 0;
+      background: #f9f9f9;
+    }
+    h3 {
+      margin: 10px 0 6px 0;
+      font-size: 14px;
+      color: #222;
+    }
+    h3:first-child {
+      margin-top: 0;
+    }
+    .input-group {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    input {
+      flex: 1;
+      padding: 5px 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    button {
+      padding: 5px 10px;
+      background: #8b0000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    button:hover {
+      background: #a80000;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 12px 0;
+      max-height: 130px;
+      overflow-y: auto;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 5px 8px;
+      margin-bottom: 4px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .brand-item { text-transform: capitalize; }
+    .sku-item { text-transform: uppercase; font-family: monospace; }
+    .remove-btn {
+      background: #e0e0e0;
+      color: #333;
+      padding: 2px 6px;
+      font-size: 11px;
+    }
+    .remove-btn:hover { background: #ccc; }
+  </style>
+</head>
+<body>
+  <h3>Blocked Cigar Brands</h3>
+  <div class="input-group">
+    <input type="text" id="brandInput" placeholder="e.g., teufel hund" />
+    <button id="addBrandBtn">Add</button>
+  </div>
+  <ul id="brandList"></ul>
+
+  <h3>Blocked Sampler SKUs</h3>
+  <div class="input-group">
+    <input type="text" id="skuInput" placeholder="e.g., KP-VS002-24" />
+    <button id="addSkuBtn">Add</button>
+  </div>
+  <ul id="skuList"></ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
