@@ -302,7 +302,7 @@ if (window.location.hostname.includes("cigarpage.com")) {
 
     if (brand && !btnBar.querySelector(".cp-block-brand-btn")) {
       const bBtn = makeBtn(`Block "${brand}"`, "#8b0000", "#b30000", "cp-block-brand-btn", () => {
-        chrome.storage.local.get({ blockedBrands: ["teufel hund"] }, (data) => {
+        chrome.storage.local.get({ blockedBrands: [] }, (data) => {
           const updated = data.blockedBrands;
           if (!updated.includes(brand)) {
             updated.push(brand);
